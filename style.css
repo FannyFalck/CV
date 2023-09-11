@@ -1,0 +1,332 @@
+@media (prefers-color-scheme: light) {
+  html, body {
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+header{
+  background-color: rgb(109, 179, 229);
+  padding: 35px;  
+} 
+
+h1, h3{
+  text-align: center;
+}
+
+
+#aside{
+  
+  float: left;
+  width: 200px;
+  background-color: rgb(109, 179, 229);
+  font-size: 17px;
+  padding: 0 20px 20px 20px;
+}
+
+#aside p, h4{
+  text-align: center;
+}
+
+footer{
+  background-color: rgb(109, 179, 229);
+  padding: 15px;
+  text-align: left;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  
+}
+
+
+
+
+
+
+/* ***************************************************************** 
+                           HAMBURGER MENU
+*****************************************************************  */
+
+
+* {
+  margin: 0;
+  padding: 0;   
+}
+
+.my-button {
+  background-color: transparent;
+  border: 10px;
+  color: white;
+  cursor: pointer;
+  float: left;
+  line-height:normal;
+  display: none;
+
+  font-size: 35px;
+  padding-top: 2%;
+  /* padding: 1%;
+  border-radius: 4%; */
+}
+
+.my-button:focus {
+  outline: none;
+}
+
+nav {
+  background-color: grey;
+  flex-wrap: wrap;
+}
+
+nav ul {
+  display: flex;
+  justify-content: right;
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  padding: 20px 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 25px; 
+}
+
+nav ul li:hover {
+  text-decoration: underline;
+  text-decoration-color: black;
+}
+
+.page {
+  display: none;
+  }
+  
+  #content {
+    display: flex;
+    padding-left: 40px;
+    text-align: center;
+    font-size: 19px;
+  }
+  
+@media (max-width: 800px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  .my-button {
+    display: block;
+  }
+}
+
+@media (max-width: 600px) {
+  nav ul {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  .my-button {
+    display: block;
+  }
+
+  nav {
+    background-color: rgb(62, 109, 149);
+  }
+}
+
+
+
+/* ***************************************************************** 
+                           NAVIGATIONBAR
+*****************************************************************  */
+/* .navigationbar{
+  overflow: hidden;
+} */
+.nav-logo{
+  display: flex;
+  float: Left;
+  padding-top: 15px;
+  font-size: 25px;
+  text-decoration: none;
+  padding-left: 5px;
+  color: black;
+}
+
+.nav-logo a:hover{
+  background-color: #ddd;
+  color: black; 
+}
+
+
+.nav-menu {
+  display: flex;
+  float: right;
+  list-style: none;
+  
+  
+}
+
+.nav-menu a {
+  padding: 25px;
+  font-size: 25px;  
+  text-decoration: none;
+  color: black;
+}
+
+.nav-menu a:hover{
+  background-color: #ddd;
+  color: black;
+}
+
+
+/* ***************************************************************** 
+                           DARK MODE
+*****************************************************************  */
+/* Darkmode button -> Rounded sliders */ 
+.slider.round {
+  border-radius: 34px;
+}
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* hemsidan som jag fixade den på : https://www.w3schools.com/howto/howto_css_switch.asp */
+.darkmodeswitch {
+  position: relative;
+  float: right;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  bottom: 55px; 
+}
+
+.darkmodeswitch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+header label p {
+  color: black;
+  margin-top: 35px;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: gray;
+}
+
+input:checked + .slider +  {
+  background-color: gray;
+} 
+
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* ------ darkmode för bakgrund, header, footer  ------ */
+/* Darkmode colors ALL */
+.dark-mode {
+  background-color: #121212;
+  color: white;
+  opacity: 87%;
+}
+
+.dark-mode a {
+  /* background-color: #121212; */
+  color: white;
+  opacity: 87%;
+}
+
+.dark-mode a:hover{
+  /* background-color: #ddd; */
+  color: black;
+}
+
+ .header-dark {
+  background-color: black;
+  color: white;
+  opacity: 87%;
+}
+.footer-dark{
+  background-color: black;
+  color: white;
+  opacity: 87%;
+}
+.navbar-dark{
+  /* background-color: black; */
+  /* background-color: #121212; */
+  background-color: rgb(33, 31, 31);
+  color: white;
+  opacity: 87%;
+}
+
+.aside-dark{
+  background-color: black;
+  color: white;
+  opacity: 87%;
+}
+
+.htmlbody-dark{
+  background-color: #121212;
+  color: white;
+  opacity: 87%;
+
+}
+
+.togglebutton-dark{
+  /* background-color:gray; */
+  color: white;
+  opacity: 87%;
+}
+/* Darkmode text -> Darkmode/Lightmode change text when clickt on  */
+
+#darkmodetext {
+  color: black;
+  margin-top: 20px;
+}
+
+.dark-mode #darkmodetext {
+  color: white;
+  opacity: 87%;
+}
