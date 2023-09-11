@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fannys CV</title>
+  
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+  
+  <header> 
+    <button class="my-button" id="my-button"> <i class="fas fa-bars"></i> </button>   
+    <h1> Fanny Falck</h1>  
+    <h3>Curriculum Vitae </h3> 
+    
+    <label class="darkmodeswitch"> 
+      <input type="checkbox" onclick="darkmodebutton(); showDarkmodeText();">
+      <span class="slider round"> </span>
+      <p id="darkmodetext">Darkmode</p>
+    </label> 
+  </header>
+
+
+  <!-- navigationbar -->
+  <nav id="navigationbar">
+    <ul id="mynav">
+      <li><a href="#" data-target="cv"> CV</a></li>
+      <li><a href="#" data-target="ommig"> Om Mig</a></li>
+      <li><a href="#" data-target="utbildningar" >Utbildningar</a></li>
+      <li><a href="#" data-target="ovrigt" >Övrigt</a></li>
+    </ul>
+
+  </nav>
+
+  <!-- <p> Här är en text som ska se till att det finns darkmode </p> -->
+
+
+
+
+
+  <aside id="aside">
+    <br> 
+    <h4>  <u> OM MIG </u> </h4> 
+    <p> Jag är en person som gillar att komma på med nya ideer och samarbeta, med andra. 
+        Vill lära mig nya saker och att ha koll på läget. 
+        Jag vill hitta nya utmaningar som jag kan bli passionerad över.
+    </p>
+
+    <br>
+    
+    <h4>  <u> KONTAKT </u> </h4> 
+    <p>960708 <br> 
+      falckfanny@gmail.com <br>
+      +46 73-7550893 <br>
+      Lützengatan 9 <br>
+      Stockholm 11520 
+    </p>
+
+    <br>
+
+    <h4>  <u> KUNSKAPER </u> </h4> 
+    <p>Socialkompetens Målinriktad <br>
+      Svenska - Modersmål <br> 
+      Engelska - Flytande i tal och skrift
+    </p>
+      
+    
+  </aside>
+
+
+<!-- ---------- -------------- ALL PAGES -------- -------- -------- --------   -->
+<div id="content">
+  <div id="cv" class="page">
+    <h1>CV</h1>
+    <p>Jag är en person som gillar att komma på med nya ideer och samarbeta, med andra. 
+      Vill lära mig nya saker och att ha koll på läget. 
+      Jag vill hitta nya utmaningar som jag kan bli passionerad över.
+  </p>
+  </div>
+
+  <div id="ommig" class="page">
+    <h1>Om Mig</h1>
+    <p>Text om mig.</p>
+  </div>
+
+  <div id="utbildningar" class="page">
+    <h1>Mina utbildningar</h1>
+    <p>Learn more about us on the about page.</p>
+  </div>
+
+  <div id="ovrigt" class="page">
+    <h1>Övrigt</h1>
+    <p>Mina cetiferkat .</p>
+  </div>
+</div>
+
+
+
+  <footer> Skapad av: Fanny Falck</footer> 
+    
+</body>
+</html>
