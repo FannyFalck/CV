@@ -1,33 +1,49 @@
 // --------------- Dark mode -------------
-function darkmodebutton() {
-  var element = document.body;
-  element.classList.toggle("dark-mode");
 
-  var headerElement = document.querySelector("header");
-  headerElement.classList.toggle("header-dark");
+function ALLdarkmode(){
+  var darkmodeelements = [ {
+    element: "header",
+    classname: "darkmode1"
+  }, 
+  {
+    element: "footer",
+    classname: "darkmode2"
+  },
+  {
+    element: "nav",
+    classname: "darkmode3"
+  },
+  {
+    element: "aside",
+    classname: "darkmode2"
+  },
+  {
+    element: "html",
+    classname: "darkmode2"
+  },
+  {
+    element: "button",
+    classname: "darkmode1"
+  },
+  {
+    element: "body",
+    classname: "darkmode1"
+  },
+  {
+    element: "#darkmodetext",
+    classname: "darkmodetextwhite"
+  },
+  ]
 
-  var footerElement = document.querySelector("footer");
-  footerElement.classList.toggle("footer-dark");
+  darkmodeelements.forEach(element => {
+    var toggle = document.querySelector(element.element); // hämta elemetet element, alltså element.body
+  toggle.classList.toggle(element.classname);
 
-
-  var navElement = document.querySelector("nav");
-  navElement.classList.toggle("navbar-dark");
-
-  var aside = document.querySelector("aside");
-  aside.classList.toggle("aside-dark");
-
-  var htmlbody = document.querySelector("html");
-  htmlbody.classList.toggle("htmlbody-dark");
-
-  var toggle = document.querySelector("button");
-  toggle.classList.toggle("togglebutton-dark");
-
+  })
 
 }
 
-
 // ----------------------- SWAPPING DARKMODE TEXT-------------------
-
 function showDarkmodeText() {
   var x = document.getElementById("darkmodetext");
   if (x.innerHTML === "Darkmode") {
@@ -52,7 +68,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // ---------------------------------  SPA ---------------------------- 
-
 document.addEventListener('DOMContentLoaded', () => {
   const navLinks = document.querySelectorAll('nav a');
   const contentSections = document.querySelectorAll('.page');

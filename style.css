@@ -1,47 +1,71 @@
 @media (prefers-color-scheme: light) {
   html, body {
     background-color: white;
-    color: black;
-    margin: 0;
-    padding: 0;
+    color: black; 
   }
+}
+body{
+  height: 100%;
 }
 
 header{
   background-color: rgb(109, 179, 229);
   padding: 35px;  
 } 
-
 h1, h3{
   text-align: center;
 }
 
-
-#aside{
+@media (max-width: 600px){
+  aside{
+    /* float: left; */
+    width: 100%;
+    background-color: rgba(109, 179, 229, 0.905);
+    font-size: 17px;
+    padding: 0 20px 20px 20px;
+    display: block;
+  }
   
-  float: left;
-  width: 200px;
-  background-color: rgb(109, 179, 229);
+  aside p, h4{
+    text-align: center;
+  }
+
+  .grid{
+    display: grid;
+    grid-template-columns: 100% !important;
+  }
+}
+
+aside{
+  width: 100%;
+  background-color: rgba(109, 179, 229, 0.905);
   font-size: 17px;
   padding: 0 20px 20px 20px;
+  display: block;
+  
 }
 
-#aside p, h4{
+aside p, h4{
   text-align: center;
 }
+
 
 footer{
   background-color: rgb(109, 179, 229);
   padding: 15px;
   text-align: left;
-  position: fixed;
+  
   bottom: 0;
   width: 100%;
   
 }
 
 
-
+.grid{
+  display: grid;
+  grid-template-columns: 20% 80%;
+  
+}
 
 
 
@@ -105,12 +129,13 @@ nav ul li:hover {
   display: none;
   }
   
-  #content {
-    display: flex;
-    padding-left: 40px;
-    text-align: center;
-    font-size: 19px;
-  }
+#content {
+  display: flex;
+  padding-left: 40px;
+  text-align: center;
+  font-size: 19px;
+  margin: 30px 50px 10px 50px;
+}
   
 @media (max-width: 800px) {
   nav ul {
@@ -264,61 +289,7 @@ input:checked + .slider:before {
   transform: translateX(26px);
 }
 
-/* ------ darkmode för bakgrund, header, footer  ------ */
-/* Darkmode colors ALL */
-.dark-mode {
-  background-color: #121212;
-  color: white;
-  opacity: 87%;
-}
 
-.dark-mode a {
-  /* background-color: #121212; */
-  color: white;
-  opacity: 87%;
-}
-
-.dark-mode a:hover{
-  /* background-color: #ddd; */
-  color: black;
-}
-
- .header-dark {
-  background-color: black;
-  color: white;
-  opacity: 87%;
-}
-.footer-dark{
-  background-color: black;
-  color: white;
-  opacity: 87%;
-}
-.navbar-dark{
-  /* background-color: black; */
-  /* background-color: #121212; */
-  background-color: rgb(33, 31, 31);
-  color: white;
-  opacity: 87%;
-}
-
-.aside-dark{
-  background-color: black;
-  color: white;
-  opacity: 87%;
-}
-
-.htmlbody-dark{
-  background-color: #121212;
-  color: white;
-  opacity: 87%;
-
-}
-
-.togglebutton-dark{
-  /* background-color:gray; */
-  color: white;
-  opacity: 87%;
-}
 /* Darkmode text -> Darkmode/Lightmode change text when clickt on  */
 
 #darkmodetext {
@@ -326,7 +297,26 @@ input:checked + .slider:before {
   margin-top: 20px;
 }
 
-.dark-mode #darkmodetext {
+/* ******* ******* From function() ALLdarkmode ************** */
+.darkmodetextwhite {
+  color: white !important; 
+  opacity: 87%;
+}
+
+.darkmode1{
+  background-color: black;
+  color: white;
+  opacity: 87%;
+}
+
+.darkmode2{
+  background-color: #121212;
+  color: white;
+  opacity: 87%;
+}
+
+.darkmode3{
+  background-color: rgb(33, 31, 31);
   color: white;
   opacity: 87%;
 }
