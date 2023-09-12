@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Load initial content
-  navigate('cv');
+  navigate('arbete');
 });
 
 

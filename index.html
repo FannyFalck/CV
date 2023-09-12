@@ -16,9 +16,13 @@
 <body>
   
   <header> 
-    <button class="my-button" id="my-button"> <i class="fas fa-bars"></i> </button>   
-    <h1> Fanny Falck</h1>  
-    <h3>Curriculum Vitae </h3> 
+    <button class="my-button" id="my-button"> <i class="fas fa-bars"></i> </button> 
+    <div class="headingText">
+      <h1> Fanny <br>Falck</h1>  
+      <h3> Webbutvecklare - Programmerare </h3> 
+    </div>  
+    
+    <!-- <h3>Curriculum Vitae </h3>  -->
     
     <label class="darkmodeswitch"> 
       <input type="checkbox" onclick="ALLdarkmode(); showDarkmodeText();">
@@ -30,77 +34,265 @@
 
   <!-- navigationbar -->
   <nav id="navigationbar">
+    
     <ul id="mynav">
-      <li><a href="#" data-target="cv"> CV</a></li>
-      <li><a href="#" data-target="ommig"> Om Mig</a></li>
+      <li><a href="#" data-target="arbete"> Arbete</a></li>
       <li><a href="#" data-target="utbildningar" >Utbildningar</a></li>
-      <li><a href="#" data-target="ovrigt" >Övrigt</a></li>
+      <!-- <li><a href="#" data-target="ommig"> Om Mig</a></li> -->
+      <li><a href="#" data-target="personligtbrev"> Personligt Brev</a></li>
     </ul>
 
   </nav>
 
-  <!-- <p> Här är en text som ska se till att det finns darkmode </p> -->
+  
 
 
 
 
-<div class="grid">
-      <aside>
-        <br> 
-        <h4>  <u> OM MIG </u> </h4> 
-        <p> Jag är en person som gillar att komma på med nya ideer och samarbeta, med andra. 
-            Vill lära mig nya saker och att ha koll på läget. 
-            Jag vill hitta nya utmaningar som jag kan bli passionerad över.
-        </p>
-
-        <br>
-        
-        <h4>  <u> KONTAKT </u> </h4> 
-        <p>960708 <br> 
-          falckfanny@gmail.com <br>
-          +46 73-7550893 <br>
-          Lützengatan 9 <br>
-          Stockholm 11520 
-        </p>
-
-        <br>
-
-        <h4>  <u> KUNSKAPER </u> </h4> 
-        <p>Socialkompetens Målinriktad <br>
-          Svenska - Modersmål <br> 
-          Engelska - Flytande i tal och skrift
-        </p>
-        
-      </aside>
-
-
-    <!-- ---------- -------------- ALL PAGES -------- -------- -------- --------   -->
-    <div id="content">
-      <div id="cv" class="page">
-        <h1>CV</h1>
-        <p>Jag är en person som gillar att komma på med nya ideer och samarbeta, med andra. 
+  <div class="grid">
+    <aside>
+      <br> 
+      <h4>  <u> OM MIG </u> </h4> 
+      <p> Jag är en person som gillar att komma på med nya ideer och samarbeta, med andra. 
           Vill lära mig nya saker och att ha koll på läget. 
           Jag vill hitta nya utmaningar som jag kan bli passionerad över.
       </p>
-      </div>
 
-      <div id="ommig" class="page">
-        <h1>Om Mig</h1>
-        <p>Text om mig.</p>
-      </div>
+      <br>
+      
+      <h4>  <u> KONTAKT </u> </h4> 
+      <p>960708 <br> 
+        falckfanny@gmail.com <br>
+        +46 73-7550893 <br>
+        Lützengatan 9 <br>
+        Stockholm 11520 
+      </p>
+
+      <br>
+
+      <h4>  <u> KUNSKAPER </u> </h4> 
+      <p>Socialkompetens Målinriktad <br>
+        Svenska - Modersmål <br> 
+        Engelska - Flytande i tal och skrift
+      </p>
+
+      <br>
+
+      <h4> <u> CERTIFIKAT </u></h4>
+      <p> 
+        VHF – Certifikat <br>
+        Fartygsbefäl (Klass 8) <br>
+        Förarintyg till båt <br>
+        Basic Safty Traning - (Grundläggande säkerhetsutbildning) <br>
+      </p>
+
+      <br> 
+      <h4> <u> REFERENSER </u></h4> 
+      <p> Lämnas gärna på begäran.</p>
+             
+    </aside>
+
+    <!-- ---------- -------------- ALL PAGES -------- -------- -------- --------   -->
+    <div id="content">
+      <div id="arbete" class="page"> 
+
+        <h2> ARBETSERFARENHET </h2> <hr style="width:38%; border: 0.5px solid ;" > <br> <br>    
+        <div class="VerticalLine">
+          <p><i> 11 Nov 2017- 16 Aug 2020 </i> <br>
+            <b>Butikbiträde  -  Martin & servera ”Restaurang butiker”, Bromma </b> <br>
+            Martin & Servera ”Restaurang butiker” är ett dotterbolag till Martin & Servera. 
+            Det finns en fysik butik i Bromma där jag jobbade som kassapersonal ca 20 timmar i veckan. 
+          </p>
+        </div> 
+
+        <br> <br>
+
+        <div class="VerticalLine">
+          <p><i> 6 Jun -7 Jul 2017  </i> <br>
+            <b>Servitris - Sumo Sallad, Australien </b> <br>
+            Sumo Sallad är en sallads bar runt om i Australien, 
+            där jobbade jag i 4 veckor, deltid. Mina uppgifter var att servera kunder, 
+            ta hand om kassan samt tillaga sallader.
+          </p>
+        </div>  
+
+        <br> <br>
+
+        <div class="VerticalLine">
+          <p><i> 1 Nov - 31 Dec 2016  </i> <br>
+            <b>Lagerarbete - Klong, Lidingö </b> <br>
+            Jobbade på Klongs lager i 2 månader. 
+            Jag hjälpte till att packa ner och slå in alla olika produkter.  
+          </p>
+        </div>  
+
+        <br> <br>
+
+        <div class="VerticalLine">
+          <p><i> 14 Aug 2015 - 25 Oct 2016  </i> <br>
+            <b>Sectionleader - Vapiano, Kungsbron	 </b> <br>
+            Jag började som en ”Vapianist”, vilket innebär att jag gjorde den grundläggande matlagningen, 
+            förberedde mat, tog beställningar, lagade pasta och salladsrätter. Efter några månader blev 
+            jag befordrad till högre tjänst som ”Trainer” vilket innebar att jag fick ansvaret för de nyanställda. 
+            Jag tränade och lärde dem allt om köket. Efter 4 praktikanter blev jag befordrad till ytterligare en högre tjänst, 
+            ”Section Leader”. Min roll där var att ha ansvaret för hela pasta- och sallad sektionen. 
+            Jag såg till att alla gjorde det som de skulle göra, se till att alla kunder var nöjda och att maten var tillagad på rätt sätt. 
+          </p>
+        </div> 
+        <br> 
+
+      </div> <!--  slut tagg på arbeta sidan -->
+
+  
 
       <div id="utbildningar" class="page">
-        <h1>Mina utbildningar</h1>
-        <p>Learn more about us on the about page.</p>
-      </div>
+        <h2>Mina utbildningar</h2> <hr style="width:40%; border: 0.5px solid ;" > <br> <br>    
+        <div class="VerticalLine">
+          <p><i>11 Aug 2020 - 1 Jun 2023 </i> <br>
+            <b>Högskolan i Skövde - Webbutvckling - Programmering, 180 hp </b> <br>
+            Gick programmet ”Webbutvckling - Programmering” i Högskolan i Skövde.
+          </p>
+        </div>
 
-      <div id="ovrigt" class="page">
-        <h1>Övrigt</h1>
-        <p>Mina cetiferkat .</p>
+        <br>
+
+        <div class="VerticalLine"> 
+          <p> <i> 2020 Jul </i> <br>
+            <b>NTI Komvux - Webbutveckling 2, 100 p </b> <br>
+            Ville fortsätta att studera inom detta område 
+          </p>
+        </div>
+
+        <br>
+
+        <div class="VerticalLine"> 
+          <p> <i> 2020 Mar</i> <br>
+            <b>NTI Komvux - Webbutveckling 1, 100 p</b> <br>
+            Gick på komvux för att testa att studera Webbutveckling
+          </p>
+        </div>
+
+        <br>
+        
+        <div class="VerticalLine"> 
+          <p> <i> 2019 Okt </i> <br>
+            <b>NTI Komvux - Dator och nätverksteknik, 100 p </b> <br>
+            Gick på komvux för att testa att studera nätverksteknik
+          </p>
+          
+        </div>
+
+        <br>
+
+        <div class="VerticalLine"> 
+          <p> <i> 2019 Aug </i> <br>
+            <b>NTI Komvux - Datateknik 1a, 100 p </b> <br>
+            Gick på komvux för att testa att studera datateknik
+          </p>
+        </div>
+
+        <br>
+
+        <div class="VerticalLine"> 
+          <p> <i> 2019 Jan - 2019 Jun </i> <br>
+            <b> Stockholm Universitet - Pedagogik 30, hp </b> <br>
+            Studerade grundläggande pedagogik på Stockholms Universitet en termin.
+          </p>
+        </div>
+
+        <br> 
+
+        <div class="VerticalLine"> 
+          <p> <i> 2018 Nov </i> <br>
+            <b> Jensen Komvux: Historia 1a2, 50 p </b> <br>
+            Studerade upp historia
+          </p>
+        </div>
+
+        <br>
+
+        <div class="VerticalLine"> 
+          <p> <i> 2012 Aug - 2015 Jun </i> <br>
+            <b> Gymnasium - Marina Läroverket. </b> <br>
+            Gick i gymnasium med inriktningen Vatten och Miljö i Danderyd. 
+          </p>
+        </div>
+
+        <br>
+
+        <div class="VerticalLine"> 
+          <p> <i> 2008-2012 </i> <br>
+            <b>Högstadiet - Äppelviksskolan 195 p</b> <br>
+          </p>
+        </div>
+
+        <br>
+
+        <div class="VerticalLine"> 
+          <p> <i> </i> <br>
+            <b></b> <br>
+          </p>
+          
+        </div>
+
+        <br>
+
+        <div class="VerticalLine"> 
+          <p> <i> </i> <br>
+            <b></b> <br>
+          </p>
+          
+        </div>
+
+        <br>
+
+        <div class="VerticalLine"> 
+          <p> <i> </i> <br>
+            <b></b> <br>
+          </p>
+          
+        </div>
+
+        <br>
+
+        <div class="VerticalLine"> 
+          <p> <i> </i> <br>
+            <b></b> <br>
+          </p>
+          
+        </div>
+
+        <br>
+
+        <div class="VerticalLine"> 
+          <p> <i> </i> <br>
+            <b></b> <br>
+          </p>
+          
+        </div>
+
+        <br>
+
+
+
+
+      </div>  <!-- Slut tagg -->
+
+
+
+      <div id="personligtbrev" class="page">
+        <h1>PERSONLIG BREV</h1>
+        <p></p>
       </div>
     </div>
 
-</div>
+
+    <div id="ommig" class="page">
+      <h1>Om Mig</h1>
+      <p>Text om mig.</p>
+    </div> 
+
+  </div>
 
 
 

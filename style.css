@@ -11,15 +11,21 @@ body{
 header{
   background-color: rgb(109, 179, 229);
   padding: 35px;  
+  text-align: left;
+  border-radius: 3px 3px 0px 0px ;
+  
 } 
-h1, h3{
-  text-align: center;
+.headingText{
+  margin-left: 50%;
+  color: black;
 }
+
 
 @media (max-width: 600px){
   aside{
     /* float: left; */
-    width: 100%;
+    /* width: 100%; */
+    max-width: -webkit-fill-available;
     background-color: rgba(109, 179, 229, 0.905);
     font-size: 17px;
     padding: 0 20px 20px 20px;
@@ -40,9 +46,10 @@ aside{
   width: 100%;
   background-color: rgba(109, 179, 229, 0.905);
   font-size: 17px;
-  padding: 0 20px 20px 20px;
+  padding: 20px 20px 20px 20px;
   display: block;
-  
+  border-radius: 35px;
+  margin: 20px 20px 20px 20px; ;
 }
 
 aside p, h4{
@@ -54,10 +61,9 @@ footer{
   background-color: rgb(109, 179, 229);
   padding: 15px;
   text-align: left;
-  
   bottom: 0;
   width: 100%;
-  
+  border-radius: 3px 3px 0px 0px ;
 }
 
 
@@ -101,6 +107,7 @@ footer{
 nav {
   background-color: grey;
   flex-wrap: wrap;
+  border-radius: 0px 0px 4px 4px ;
 }
 
 nav ul {
@@ -131,8 +138,8 @@ nav ul li:hover {
   
 #content {
   display: flex;
-  padding-left: 40px;
-  text-align: center;
+  padding-left: 60px;
+  text-align: left;
   font-size: 19px;
   margin: 30px 50px 10px 50px;
 }
@@ -216,6 +223,29 @@ nav ul li:hover {
   background-color: #ddd;
   color: black;
 }
+
+/* ***************************************************************** 
+                           COMMON STYLING
+*****************************************************************  */
+
+
+
+.VerticalLine {
+  position: relative; /* Make sure the container has a position other than 'static' */
+  padding-left: 20px; /* Adjust this value to control the distance between text and line */
+}
+
+.VerticalLine::before {
+  content: ''; /* Required for pseudo-elements */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px; /* Width of the vertical line */
+  height: 100%; /* Height of the vertical line (extends to full container height) */
+  background-color: #000; /* Color of the vertical line */
+  content: ''; /* Content property is required even if empty */
+}
+
 
 
 /* ***************************************************************** 
