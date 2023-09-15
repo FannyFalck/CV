@@ -1,6 +1,6 @@
 @media (prefers-color-scheme: light) {
   html, body {
-    background-color: white;
+    background-color: rgba(232, 240, 246, 0.905);
     color: black; 
   }
 }
@@ -17,7 +17,7 @@ header{
 } 
 .headingText{
   margin-left: 50%;
-  color: black;
+  /* color: black; */
 }
 
 
@@ -143,6 +143,9 @@ nav ul li:hover {
   font-size: 19px;
   margin: 30px 50px 10px 50px;
 }
+/* #content h2{
+  text-align: center;
+} */
   
 @media (max-width: 800px) {
   nav ul {
@@ -228,8 +231,6 @@ nav ul li:hover {
                            COMMON STYLING
 *****************************************************************  */
 
-
-
 .VerticalLine {
   position: relative; /* Make sure the container has a position other than 'static' */
   padding-left: 20px; /* Adjust this value to control the distance between text and line */
@@ -246,39 +247,30 @@ nav ul li:hover {
   content: ''; /* Content property is required even if empty */
 }
 
+/* ***************************************************************** 
+                           IKONER
+*****************************************************************  */
 
+.containterikoner{
+  display: flex;
+  justify-content: center;
+}
+
+.ikoner{
+  width: 30px;
+  font-size: 40px;
+  margin-top: -90px;
+  margin-right: 150px;
+  
+}
+
+.ikoner a i{
+  color: black;
+}
 
 /* ***************************************************************** 
-                           DARK MODE
+                           DARKMODE TOGGLE 
 *****************************************************************  */
-/* Darkmode button -> Rounded sliders */ 
-.slider.round {
-  border-radius: 34px;
-}
-.slider.round:before {
-  border-radius: 50%;
-}
-
-/* hemsidan som jag fixade den på : https://www.w3schools.com/howto/howto_css_switch.asp */
-.darkmodeswitch {
-  position: relative;
-  float: right;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-  bottom: 55px; 
-}
-
-.darkmodeswitch input { 
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-header label p {
-  color: black;
-  margin-top: 35px;
-}
 
 .slider {
   position: absolute;
@@ -320,11 +312,47 @@ input:checked + .slider:before {
 }
 
 
+/* ***************************************************************** 
+                           DARK MODE
+*****************************************************************  */
+/* Darkmode button -> Rounded sliders */ 
+.slider.round {
+  border-radius: 34px;
+}
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* hemsidan som jag fixade den på : https://www.w3schools.com/howto/howto_css_switch.asp */
+.darkmodeswitch {
+  position: relative;
+  float: right;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  bottom: 80px; 
+}
+
+.darkmodeswitch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+header label p {
+  color: black;
+  margin-top: 35px;
+}
+
+
 /* Darkmode text -> Darkmode/Lightmode change text when clickt on  */
 
 #darkmodetext {
   color: black;
-  margin-top: 20px;
+  position: relative;
+  float: right;
+  bottom: 45px; 
+  left: 60px;
 }
 
 /* ******* ******* From function() ALLdarkmode ************** */
@@ -349,4 +377,23 @@ input:checked + .slider:before {
   background-color: rgb(33, 31, 31);
   color: white;
   opacity: 87%;
+}
+
+.darkmode1 .ikoner a i {
+  color: white;
+}
+
+.custom-underline {
+  display: inline-block;
+  border-bottom: 1px solid #000;
+  padding-bottom: 5px; /* Adjust the padding to control the space */
+  line-height: 1;
+}
+
+.darkmode1 .VerticalLine::before {
+  background-color: white;
+}
+
+.darkmode1 .custom-underline {
+  border-color: white;
 }

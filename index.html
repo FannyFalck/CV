@@ -12,23 +12,42 @@
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css" integrity="sha512-W/zrbCncQnky/EzL+/AYwTtosvrM+YG/V6piQLSe2HuKS6cmbw89kjYkp3tWFn1dkWV7L1ruvJyKbLz73Vlgfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/solid.min.css">
 </head>
 <body>
   
   <header> 
-    <button class="my-button" id="my-button"> <i class="fas fa-bars"></i> </button> 
+    <button class="my-button" id="my-button"> <i class="fa-solid fa-bars"></i> </button> 
     <div class="headingText">
       <h1> Fanny <br>Falck</h1>  
       <h3> Webbutvecklare - Programmerare </h3> 
     </div>  
     
+    <div class="containterikoner">
+      <div class="ikoner">  
+        <a href="https://github.com/FannyFalck" target="_blank">
+            <i class="fab fa-github" ></i>
+        </a>
+        <a href="https://www.linkedin.com/in/fanny-falck/" target="_blank">
+            <i class="fab fa-linkedin" ></i>
+        </a>
+      </div>
+    </div>
+
+
+
+
     <!-- <h3>Curriculum Vitae </h3>  -->
     
     <label class="darkmodeswitch"> 
       <input type="checkbox" onclick="ALLdarkmode(); showDarkmodeText();">
       <span class="slider round"> </span>
-      <p id="darkmodetext">Darkmode</p>
     </label> 
+    <p id="darkmodetext">Darkmode</p>
   </header>
 
 
@@ -38,19 +57,14 @@
     <ul id="mynav">
       <li><a href="#" data-target="arbete"> Arbete</a></li>
       <li><a href="#" data-target="utbildningar" >Utbildningar</a></li>
-      <!-- <li><a href="#" data-target="ommig"> Om Mig</a></li> -->
       <li><a href="#" data-target="personligtbrev"> Personligt Brev</a></li>
+      <li><a href="#" data-target="projekt"> Projekt</a></li>
     </ul>
 
   </nav>
 
-  
-
-
-
-
   <div class="grid">
-    <aside>
+    <aside class="common-content">
       <br> 
       <h4>  <u> OM MIG </u> </h4> 
       <p> Jag är en person som gillar att komma på med nya ideer och samarbeta, med andra. 
@@ -95,8 +109,7 @@
     <!-- ---------- -------------- ALL PAGES -------- -------- -------- --------   -->
     <div id="content">
       <div id="arbete" class="page"> 
-
-        <h2> ARBETSERFARENHET </h2> <hr style="width:38%; border: 0.5px solid ;" > <br> <br>    
+        <h2 class="custom-underline">ARBETSERFARENHET</h2> <br> <br><br>
         <div class="VerticalLine">
           <p><i> 11 Nov 2017- 16 Aug 2020 </i> <br>
             <b>Butikbiträde  -  Martin & servera ”Restaurang butiker”, Bromma </b> <br>
@@ -143,10 +156,8 @@
 
       </div> <!--  slut tagg på arbeta sidan -->
 
-  
-
       <div id="utbildningar" class="page">
-        <h2>Mina utbildningar</h2> <hr style="width:40%; border: 0.5px solid ;" > <br> <br>    
+        <h2 class="custom-underline">UTBILDNINGAR</h2> <br> <br>    
         <div class="VerticalLine">
           <p><i>11 Aug 2020 - 1 Jun 2023 </i> <br>
             <b>Högskolan i Skövde - Webbutvckling - Programmering, 180 hp </b> <br>
@@ -228,73 +239,66 @@
 
         <br>
 
-        <div class="VerticalLine"> 
-          <p> <i> </i> <br>
-            <b></b> <br>
-          </p>
-          
-        </div>
-
-        <br>
-
-        <div class="VerticalLine"> 
-          <p> <i> </i> <br>
-            <b></b> <br>
-          </p>
-          
-        </div>
-
-        <br>
-
-        <div class="VerticalLine"> 
-          <p> <i> </i> <br>
-            <b></b> <br>
-          </p>
-          
-        </div>
-
-        <br>
-
-        <div class="VerticalLine"> 
-          <p> <i> </i> <br>
-            <b></b> <br>
-          </p>
-          
-        </div>
-
-        <br>
-
-        <div class="VerticalLine"> 
-          <p> <i> </i> <br>
-            <b></b> <br>
-          </p>
-          
-        </div>
-
-        <br>
-
-
-
-
-      </div>  <!-- Slut tagg -->
+      </div>  <!-- Slut tagg  utbildnigar-->
 
 
 
       <div id="personligtbrev" class="page">
-        <h1>PERSONLIG BREV</h1>
-        <p></p>
-      </div>
-    </div>
+        <h2 class="custom-underline"> PERSONLIG BREV</h2> <br> <br>
+        <div class="VerticalLine">  
+          <p>
+            Mitt namn är Fanny Falck och är 27 år. Jag gick på Högskolan i Skövde och studerade ”Webbutveckling- Programmering”, 
+            som innefattar sex terminers studier. Jag skickat in mitt examensarbete och väntar nu på mitt examensbevis.
+          </p>
+        </div>
 
+        <br><br>
 
-    <div id="ommig" class="page">
-      <h1>Om Mig</h1>
-      <p>Text om mig.</p>
-    </div> 
+        <h3 class="custom-underline">MINA INTRESSEN</h3> <br> <br>
+        <div class="VerticalLine">  
+          <p>Det jag är mest intresserad av är ”Webbprogrammering” (front-end). Jag tycker det är roligt och spännande att arbeta 
+            med webbutveckling och att designa hemsidor. Jag gillar att man behöver vara kreativ när man utvecklar. 
+            Först måste man komma på en idé på exempelvis applikationen. När man gjort det så är det bara att komma på vilka funktioner som ska finnas med, 
+            vad gör applikationen användbar för användare. Jag har ett stor intresse att jobba med agilt tillvägagångssätt. Jag skulle vilja ha mer kunskap
+            inom programmering, generellt (back-end), eftersom detta område är väldigt brett och det är många språk som är bra på olika sätt. 
+            Jag skulle vilja bli bra på ett språk och allt eftersom lära mig mer om de andra språken.
+          </p>
+        </div>
 
-  </div>
+        <br><br>
 
+        <h3 class="custom-underline">VAD JAG VILL UPPNÅ</h3> <br> <br> 
+        <div class="VerticalLine">  
+          <p>Anledningen till att jag vill söka jobb hos er är att verksamheten ser utmanande ut, där jag skulle kunna skapa webbplatser med utmärkt användarupplevelse 
+            och snygg design. Jag vill även vara med att utveckla befintliga plattformar/system, då jag vill bidra med problemlösningar till olika projekt (som inte enbart är mina). 
+            Mitt mål är att framställa lösningar som har en lång hållbarhet i framtiden, både till kunder och till mina medarbetare. Jag gillar att arbeta självständigt men även i team. 
+            Det jag vill rikta mig in på är ”Front-end”, jag vill designa och skapa hemsidor jag vill vara kreativ, jobba med kunder och/eller medarbetare för att skapa något nytt. 
+            Med min hjälp ska jag försöka skapa hemsidor med unika webbupplevelser, med utmärkt design och jag kan komma på nya idéer för både kunder och för mina medarbetare så användarna 
+            får en bättre användarupplevelse. Jag vill lära mig mer om vilka ni är, ta reda på vad ert företaget gör och hur ni arbetar med dagliga arbetsuppgifter. Jag vill lära mig allt 
+            som går att lära inom arbetet webbutveckling/programmering och jag vill se hur en arbetsdag i en webbutvecklare liv kan se ut i ert företag.
+          </p>
+        </div>
 
+        <br> <br> 
+
+        <h3 class="custom-underline">SLUTLIGA ORD</h3> <br> <br> 
+        <div class="VerticalLine">  
+          <p>Jag är en ung nyexaminerad student som vill lära mig så mycket som möjligt om ert företag. Det jag kan erbjuda är komma på med nya fräscha idéer och komma med nya förslag både 
+            för era projekt och framtida projekt. Jag är en trevlig, ordentlig, noggrann och snäll person och nyfiken på att lära mig mera, speciellt det jag inte har kunskap inom. 
+          </p>
+        </div>
+
+        <br> <br>         
+      </div> <!-- slut div på personlgi brev -->
+
+      <div id="projekt" class="page">
+        <h1>MINA PROJEKT</h1>
+        <p>Här ska alla mina olika projekt hamna.</p>
+      </div> 
+
+    </div> <!-- slut div på content -->
+
+  </div> <!-- slut div grid. -->
 
   <footer> Skapad av: Fanny Falck</footer> 
     

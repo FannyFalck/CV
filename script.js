@@ -33,6 +33,8 @@ function ALLdarkmode(){
     element: "#darkmodetext",
     classname: "darkmodetextwhite"
   },
+
+  
   ]
 
   darkmodeelements.forEach(element => {
@@ -71,6 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
   const navLinks = document.querySelectorAll('nav a');
   const contentSections = document.querySelectorAll('.page');
+  const commonContent = document.querySelector('.common-content');
 
   navLinks.forEach(link => {
     link.addEventListener('click', event => {
@@ -87,6 +90,13 @@ document.addEventListener('DOMContentLoaded', () => {
     
     const selectedSection = document.getElementById(target);
     selectedSection.style.display = 'block';
+
+    
+    if (target === 'projekt') { // code that hides aside tag in project page
+      commonContent.style.display = 'none';
+    } else {
+      commonContent.style.display = 'block';
+    }
   }
 
   // Load initial content
