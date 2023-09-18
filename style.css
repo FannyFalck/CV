@@ -44,7 +44,7 @@ header{
 
 aside{
   width: 100%;
-  background-color: rgba(109, 179, 229, 0.905);
+  background-color: rgb(109, 179, 229);
   font-size: 17px;
   padding: 20px 20px 20px 20px;
   display: block;
@@ -247,6 +247,30 @@ nav ul li:hover {
   content: ''; /* Content property is required even if empty */
 }
 
+/* ***************************************************************** 
+                           ALL COURSES
+*****************************************************************  */
+
+.containerFORcorses {
+  background-color: rgb(109, 179, 229);
+  margin: 35px 40px 15px 200px;
+  padding: 10px 0px 15px 50px;
+  border-radius: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: left; /* Centrera innehållet horisontellt */
+  text-align: left; /* Centrera texten horisontellt (om den inte är centrerad) */
+}
+
+/* Lägg till en mediaförfrågan för att ändra layouten när skärmbredden minskar */
+@media (max-width: 768px) {
+  .containerFORcorses {
+    padding: 15px; /* Minska padding när skärmbredden minskar */
+    text-align: left;
+    margin: 35px 0px 15px 0px;
+    padding: 20px 10px 15px 15px;
+  }
+}
 /* ***************************************************************** 
                            IKONER
 *****************************************************************  */
