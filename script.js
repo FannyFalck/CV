@@ -47,15 +47,31 @@ function ALLdarkmode(){
     classname: "darkmode2"
   },
   
-  ]
+  ];
 
-  darkmodeelements.forEach(element => {
-    var toggle = document.querySelector(element.element); // hämta elemetet element, alltså element.body
-  toggle.classList.toggle(element.classname);
 
-  })
-
+  darkmodeelements.forEach((elementObj) => {
+    var elements = document.querySelectorAll(elementObj.element); // Hämta alla element som matchar selektorn
+    elements.forEach((element) => {
+      element.classList.toggle(elementObj.classname); // Tillämpa eller ta bort klassen beroende på om den är aktiv eller inte
+    });
+  });
 }
+
+
+
+
+
+
+
+
+//   darkmodeelements.forEach(element => {
+//     var toggle = document.querySelector(element.element); // hämta elemetet element, alltså element.body
+//   toggle.classList.toggle(element.classname);
+
+//   })
+
+// }
 
 // ----------------------- SWAPPING DARKMODE TEXT-------------------
 function showDarkmodeText() {
