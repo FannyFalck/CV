@@ -7,7 +7,7 @@ function ALLdarkmode(){
   }, 
   {
     element: "footer",
-    classname: "darkmode2"
+    classname: "darkmode3"
   },
   {
     element: "nav",
@@ -33,7 +33,19 @@ function ALLdarkmode(){
     element: "#darkmodetext",
     classname: "darkmodetextwhite"
   },
+  {
+    element: ".grid-projectsPage",
+    classname: "darkmode2"
+  },
+  {
+    element: ".linkPosition a",
+    classname: "darkmodetextwhite"
+  },
 
+  {
+    element: ".containerFORcorses",
+    classname: "darkmode2"
+  },
   
   ]
 
