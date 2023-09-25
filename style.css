@@ -366,6 +366,13 @@ nav ul li:hover {
   padding-left: 100px;
 }
 
+.picturePosition3 img{
+  padding-top: 40px;
+  max-width: 590px; 
+  height: auto;
+  padding-left: 50px;
+}
+
 
 
 #projekt .grid-allpages {
