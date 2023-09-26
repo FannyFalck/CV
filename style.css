@@ -293,7 +293,7 @@ nav ul li:hover {
 }
 
 /* ***************************************************************** 
-                           GRID FOR PROJECT PAGES
+                           GRID FOR PROJECT PAGES (PICTURES)
 *****************************************************************  */
 
 .grid-projectsPage {
@@ -311,18 +311,19 @@ nav ul li:hover {
 .linkPosition {
   grid-row: 3 / 4; /* Tom plats tar den tredje raden */
   grid-column: 1 / 2; /* Tom plats tar den första kolumnen */
-  margin-left: 100px;
 }
 
 .linkPosition a{
   text-decoration: none;
   color: black;
   font-size: 20px;
+  padding: 0px 0px 0px 100px;
+  text-decoration: underline;
 
 }
 
 .linkPosition a:hover{
-  cursor: pointer; 
+  cursor: pointer;   
 }
 
 .TextPositionSpace {
@@ -343,14 +344,7 @@ nav ul li:hover {
   text-align: center;
 }
 
-/* Pictures  */
-
-/* img{
-  max-width: 450px; 
-  height: auto;
-  padding-left: 100px;
-} */
-
+/* ******Pictures ****** */
 
 .picturePosition1 img{
   padding-top: 40px;
@@ -373,7 +367,11 @@ nav ul li:hover {
   padding-left: 50px;
 }
 
-
+@media (max-width: 800px) {
+  .linkPosition a {
+    padding: 0; /* Ta bort överskuggande padding som tidigare kunde påverka placeringen */
+  }
+}
 
 #projekt .grid-allpages {
   display: block;
@@ -392,6 +390,81 @@ nav ul li:hover {
   max-width: 1250px;
   border-radius: 30px;
 }
+
+ /* Responsive for all the pictures */
+@media (max-width: 675px) {
+  .picturePosition1 img {
+    max-width: 100%; /* Bilden kommer att anpassa sig till skärmens bredd */
+    height: auto; /* Säkerställ att höjden justeras proportionellt */
+    padding-left: 10px; /* Anpassa vänstermarginalen om det behövs */
+  }
+
+  .picturePosition2 img {
+    max-width: 100%; 
+    height: auto;
+    padding-left: 10px; 
+  }
+
+  .picturePosition3 img {
+    max-width: 100%;
+    height: auto; 
+    padding-left: 10px; 
+  }
+
+  .TextPositionSpace .pTagg {
+    font-size: 16px; 
+    margin-top: 20px; 
+  }
+}
+
+@media (max-width: 910px){
+  .grid-projectsPage {
+    display: flex;
+    flex-direction: column; /* Ställ in riktningen till kolumn för att placera elementen vertikalt */
+    align-items: center; /* Centrera elementen horisontellt */
+  }
+
+  .picturePosition1 img {
+    max-width: 380px;
+    height: auto;
+    margin-bottom: 10px; /* Lägg till lite mellanrum mellan bilden och länken */
+  }
+  .picturePosition2 img {
+    max-width: 340px;
+    height: auto;
+    margin-bottom: 10px; /* Lägg till lite mellanrum mellan bilden och länken */
+  }
+
+  .picturePosition3 img {
+    max-width: 380px;
+    height: auto;
+    margin-bottom: 10px; /* Lägg till lite mellanrum mellan bilden och länken */
+  }
+
+  .linkPosition {
+    margin-bottom: 10px; /* Lägg till mellanrum mellan länken och texten */
+  }
+
+  .TextPositionSpace .pTagg {
+    font-size: 20px;
+    text-align: left;
+    margin-top: 0; /* Ta bort övre marginalen för texten */
+  }
+
+  
+}
+
+@media (max-width: 375px) and (max-height: 667px) {
+  .picturePosition1 img,
+  .picturePosition2 img,
+  .picturePosition3 img {
+    max-width: 100%;
+    height: auto;
+  }
+
+
+}
+
 
 /* ***************************************************************** 
                            DARKMODE TOGGLE 
