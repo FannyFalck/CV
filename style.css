@@ -450,8 +450,6 @@ nav ul li:hover {
     text-align: left;
     margin-top: 0; /* Ta bort övre marginalen för texten */
   }
-
-  
 }
 
 @media (max-width: 375px) and (max-height: 667px) {
@@ -461,8 +459,6 @@ nav ul li:hover {
     max-width: 100%;
     height: auto;
   }
-
-
 }
 
 

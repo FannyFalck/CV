@@ -59,12 +59,6 @@ function ALLdarkmode(){
 }
 
 
-
-
-
-
-
-
 //   darkmodeelements.forEach(element => {
 //     var toggle = document.querySelector(element.element); // hämta elemetet element, alltså element.body
 //   toggle.classList.toggle(element.classname);
