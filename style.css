@@ -19,6 +19,13 @@ header{
   margin-left: 50%;
   /* color: black; */
 }
+@media (max-width: 375px){
+  .headingText{
+    margin-left: 40%;
+    /* color: black; */
+  }
+}
+
 
 
 @media (max-width: 600px){
@@ -94,8 +101,8 @@ footer{
   line-height:normal;
   display: none;
 
-  font-size: 35px;
-  padding-top: 2%;
+  font-size: 40px;
+  padding-top: 7%;
   /* padding: 1%;
   border-radius: 4%; */
 }
@@ -138,11 +145,18 @@ nav ul li:hover {
   
 #content {
   display: flex;
-  padding-left: 60px;
+  
   text-align: left;
   font-size: 19px;
-  margin: 30px 50px 10px 50px;
+  margin: 30px 50px 10px 90px;
 }
+
+ @media (max-width: 375px){
+  #content{
+    margin-left: 20px ; 
+  }
+} 
+
 /* #content h2{
   text-align: center;
 } */
@@ -263,12 +277,18 @@ nav ul li:hover {
 }
 
 /* Lägg till en mediaförfrågan för att ändra layouten när skärmbredden minskar */
-@media (max-width: 768px) {
+@media (max-width: 876px) {
   .containerFORcorses {
     padding: 15px; /* Minska padding när skärmbredden minskar */
     text-align: left;
     margin: 35px 0px 15px 0px;
     padding: 20px 10px 15px 15px;
+  }
+}
+
+@media (max-width: 375px) {
+  .containerFORcorses {
+    padding: 10px 10px 15px 20px;
   }
 }
 /* ***************************************************************** 
@@ -290,6 +310,15 @@ nav ul li:hover {
 
 .ikoner a i{
   color: black;
+}
+
+@media (max-width: 375px) {
+  .ikoner{
+    width: 30px;
+    font-size: 40px;
+    margin-top: -110px;
+    margin-right: 150px;
+  }
 }
 
 /* ***************************************************************** 
@@ -381,6 +410,12 @@ nav ul li:hover {
 #projekt .common-content {
   display: none;
 }
+
+/* @media (max-width: 375px) {
+  .common-content{
+    margin-left: -80px;
+  }
+} */
 
 .grid-projectsPage{
   background-color: rgb(109, 179, 229);
@@ -527,6 +562,12 @@ input:checked + .slider:before {
   bottom: 80px; 
 }
 
+@media (max-width: 375px){
+  .darkmodeswitch {
+    bottom: 100px; 
+  }
+}
+
 .darkmodeswitch input { 
   opacity: 0;
   width: 0;
@@ -548,6 +589,12 @@ header label p {
   bottom: 45px; 
   left: 60px;
 }
+@media (max-width: 375px){
+  #darkmodetext {
+    bottom: 60px; 
+  }
+}
+
 
 /* ******* ******* From function() ALLdarkmode ************** */
 .darkmodetextwhite {
